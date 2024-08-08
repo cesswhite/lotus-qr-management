@@ -28,7 +28,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     "@nuxt/ui",
-    "@nuxt/image",
     '@vueuse/motion/nuxt'
   ],
   compatibilityDate: "2024-08-02",
