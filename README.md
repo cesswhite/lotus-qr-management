@@ -23,6 +23,7 @@ Made by [Eco Development Studios](https://www.ecostudios.dev/)
 - 🎛 [Nuxt UI](https://ui.nuxt.com/) - A UI Library for Modern Web Apps.
 - 🎨 [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework packed with classes.
 - 🤹 [VueUse/Motion](https://motion.vueuse.org/) - Composables putting your components in motion.
+- ▩ [Unjs/uqr](https://github.com/unjs/uqr) - Generate QR Code universally, in any runtime, to ANSI, Unicode or SVG.
 - 😀 [Heroicons](https://github.com/simple-icons/simple-icons) - Integration with Heroicons.
 - ⚡️ [Vite](https://vitejs.dev/) - Powered by Vite, instant HMR.
 - 🦾 `<script setup lang="ts">` syntax with TypeScript support.
