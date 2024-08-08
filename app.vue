@@ -9,6 +9,7 @@
 
 <script setup lang="ts">
 const appConfig = useAppConfig()
+
 onMounted(() => {
   appConfig.ui.primary = color.value
 })
