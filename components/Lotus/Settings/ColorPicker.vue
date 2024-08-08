@@ -22,12 +22,7 @@
 
 <script setup lang="ts">
 
-
 const appConfig = useAppConfig()
-
-onMounted(() => {
-    appConfig.ui.primary = color.value
-})
 
 const colors = computed(() => appConfig.ui.colors.filter(color => color !== 'primary'))
 

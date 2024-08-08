@@ -4,9 +4,6 @@
             <UInput v-model="q" placeholder="Filter by name..." size="lg" color="primary" />
         </div>
         <UTable v-if="filteredRows" :rows="filteredRows" :columns="columns" :loading="loading">
-            <template #active-data="{ row }">
-                <UToggle v-model="row.active" @update:model-value="(value) => toogleActivateQR(value, row)" />
-            </template>
             <template #actions-data="{ row }">
                 <div class="flex flex-col gap-1">
                     <UButton block @click="openModalAndSetData(row)" color="primary" variant="link"
@@ -47,7 +44,6 @@
                     </div>
                     <p class="mb-4 text-base text-red-300 text-center">
                         Are you sure you want to delete this QR code?
-
                     </p>
                     <div class="flex gap-2 items-center">
                         <UButton @click="deleteQRCode" :loading="loading" color="red" size="lg">
@@ -171,9 +167,5 @@ function downloadSvgAsSvg() {
     a.click();
     URL.revokeObjectURL(url);
 }
-
-watch(() => filteredRows.value, (newValue, oldValue) => {
-    isOpenFormToEdit.value = false
-})
 
 </script>

@@ -8,6 +8,11 @@
 
 
 <script setup lang="ts">
+const appConfig = useAppConfig()
+onMounted(() => {
+  appConfig.ui.primary = color.value
+})
+
 useSeoMeta({
   title: 'Lotus | QR Management',
   ogTitle: 'Lotus | QR Management',

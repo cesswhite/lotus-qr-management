@@ -8,16 +8,10 @@
                         Total QR Codes
                     </template>
                     <template #value>
-                        <span v-if="qr_data">
-                            {{ qr_data.length }}
-                        </span>
+                        {{ qr_data.length }}
                     </template>
                 </LotusDashboardTile>
             </div>
         </div>
     </div>
 </template>
-
-<script setup lang="ts">
-
-</script>
