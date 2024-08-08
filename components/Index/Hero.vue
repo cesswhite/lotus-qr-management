@@ -10,27 +10,15 @@
                     class="text-4xl text-center font-bold tracking-tight text-primary-500 dark:text-primary-500 sm:text-6xl mt-2">
                     Easily manage QR Codes in seconds </h1>
                 <p class="mt-6 text-lg leading-8 text-center text-primary-700/70 dark:text-primary-100/50">
-                    Create, customize, and manage your QR codes effortlessly and local.
-                    <br>
-                    No Database, no microservices, no deploy
+                    Create, customize, and control your QR codes locally
+                    with no need for databases, microservices, or deployments.
                 </p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
                     <UButton to="/lotus" color="primary" size="lg" variant="solid" icon="i-heroicons-qr-code">
-                        Start to management
+                        Get started with management
                     </UButton>
-                    <!-- 
-                    <UButton @click="signInWithGitHub" color="primary" size="lg" variant="solid" icon="i-ci-github">
-                        Get started with GitHub
-                    </UButton> -->
                 </div>
             </div>
         </div>
     </UContainer>
 </template>
-
-
-
-<script setup lang="ts">
-
-
-</script>
