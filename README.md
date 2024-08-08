@@ -1,20 +1,21 @@
-![cover-sokol-background](/public/hato-light.jpg)
+![cover-sokol-background](https://res.cloudinary.com/dpvsklksg/image/upload/v1723152159/Eco-Assets/Captura_de_pantalla_2024-08-08_a_la_s_3.22.13_p.m._ysejbv.png)
 
-# Hato | Minimal Portfolio Showcase with Nuxt UI
+# Lotus | QR Management
 
 Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
 
-- [Demo here](https://hato-template.vercel.app/)
+- [Demo here](https://lotus-local.vercel.app/)
 
 ## About
 
-A minimal and elegant template, created with the purpose of serving as a landing page or one-page template, designed for those seeking simplicity and impeccably crafted web elements.
+Easily manage QR Codes in seconds
 
-Tailored for designers, agencies, or studios, this template is built with Nuxt 3, Nuxt UI, and TailwindCSS, bringing the best of web technology to the forefront.
+Create, customize, and control your QR codes locally with no need for databases, microservices, or deployments.
 
-- **Pages:** 1
-- **Sections:** 1
-- **Components:** 7
+Made by [Eco Development Studios](https://www.ecostudios.dev/)
+- **Pages:** 4
+- **Sections:** 2
+- **Components:** ~22
 
 ## Features
 
@@ -22,8 +23,7 @@ Tailored for designers, agencies, or studios, this template is built with Nuxt 3
 - 🎛 [Nuxt UI](https://ui.nuxt.com/) - A UI Library for Modern Web Apps.
 - 🎨 [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework packed with classes.
 - 🤹 [VueUse/Motion](https://motion.vueuse.org/) - Composables putting your components in motion.
-- 🏞 [Nuxt Image](https://image.nuxt.com/) - Image optimization for Nuxt apps..
-- 😀 [Simple Icons & Heroicons](https://github.com/simple-icons/simple-icons) - Integration with Simple Icons & Heroicons.
+- 😀 [Heroicons](https://github.com/simple-icons/simple-icons) - Integration with Heroicons.
 - ⚡️ [Vite](https://vitejs.dev/) - Powered by Vite, instant HMR.
 - 🦾 `<script setup lang="ts">` syntax with TypeScript support.
 
@@ -33,7 +33,7 @@ Tailored for designers, agencies, or studios, this template is built with Nuxt 3
 - **Released date:** 13/04/23
 - **Version:** 0.1
 - **Tech Stack:** Nuxt 3 & TailwindCSS
-- **Category:** Portfolio
+- **Category:** SaaS
 - **Page Speed:** 90 / 100 / 100 / 90
 - **Compatibility:** Chrome, Firefox, Safari, Brave, Arc, Edge
 
