@@ -13,9 +13,12 @@
                     Create, customize, and control your QR codes locally
                     with no need for databases, microservices, or deployments.
                 </p>
-                <div class="mt-10 flex items-center justify-center gap-x-6">
+                <div class="mt-10 flex flex-col items-center justify-center gap-y-4">
                     <UButton to="/lotus" color="primary" size="lg" variant="solid" icon="i-heroicons-qr-code">
                         Get started with management
+                    </UButton>
+                    <UButton to="https://ecostudios.dev/" target="_blank" color="primary" size="xs" variant="link">
+                        Created by Eco Development Studios
                     </UButton>
                 </div>
             </div>
