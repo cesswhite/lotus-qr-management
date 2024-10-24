@@ -1,17 +1,18 @@
 <template>
     <div>
         <div class="flex pb-4 border-b border-primary-300 dark:border-primary-700">
-            <UInput v-model="q" placeholder="Filter by name..." size="lg" color="primary" />
+            <UInput v-model="q" placeholder="Filter by name..." size="sm" color="primary" />
         </div>
         <UTable v-if="filteredRows" :rows="filteredRows" :columns="columns" :loading="loading">
+
             <template #actions-data="{ row }">
-                <div class="flex flex-col gap-1">
-                    <UButton block @click="openModalAndSetData(row)" color="primary" variant="link"
-                        icon="i-heroicons-eye-20-solid" label="QR Code" />
-                    <UButton block @click="openModalToEditQRCode(row)" color="sky" variant="link"
-                        icon="i-heroicons-pencil-20-solid" label="Edit" />
-                    <UButton block @click="opemModalToDeleteQRCode(row)" color="red" variant="link"
-                        icon="i-heroicons-trash-20-solid" label="Delete" />
+                <div class="flex flex-col items-start justify-start gap-y-2">
+                    <UButton @click="openModalAndSetData(row)" color="primary" variant="link"
+                        icon="i-heroicons-eye-20-solid" label="QR Code" size="sm" :padded="false" />
+                    <UButton @click="openModalToEditQRCode(row)" color="sky" variant="link"
+                        icon="i-heroicons-pencil-20-solid" label="Edit" size="sm" :padded="false" />
+                    <UButton @click="opemModalToDeleteQRCode(row)" color="red" variant="link"
+                        icon="i-heroicons-trash-20-solid" label="Delete" size="sm" :padded="false" />
                 </div>
             </template>
         </UTable>
@@ -27,7 +28,7 @@
                     </p>
                 </div>
                 <div class="w-full">
-                    <UButton block icon="i-heroicons-cloud-arrow-down" size="lg" @click="downloadSvgAsSvg">
+                    <UButton block icon="i-heroicons-cloud-arrow-down" size="sm" @click="downloadSvgAsSvg">
                         Download QR Code
                     </UButton>
                 </div>
@@ -46,11 +47,11 @@
                         Are you sure you want to delete this QR code?
                     </p>
                     <div class="flex gap-2 items-center">
-                        <UButton @click="deleteQRCode" :loading="loading" color="red" size="lg">
+                        <UButton @click="deleteQRCode" :loading="loading" color="red" size="sm">
                             Yes, delete QR code
                         </UButton>
                         <UButton @click="isOpenToDelete = false" color="gray" variant="link" :loading="loading"
-                            size="lg">
+                            size="sm">
                             No, cancel
                         </UButton>
                     </div>
