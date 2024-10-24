@@ -1,7 +1,7 @@
 <template>
     <UContainer>
         <div class="h-full min-h-dvh flex">
-            <div class="flex flex-col items-center justify-center w-1/2 mx-auto">
+            <div class="flex flex-col items-center justify-center w-full md:w-1/2 mx-auto">
                 <div
                     class="relative rounded-full px-3 py-1 text-sm leading-6 text-primary-500 dark:text-primary-500/90 ring-1 ring-primary-500/80 hover:ring-primary-500 dark:ring-primary-500/80 dark:hover:ring-primary-500">
                     QR codes management

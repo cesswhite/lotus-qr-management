@@ -1,6 +1,6 @@
 <template>
     <UButton aria-label="button to switch theme dark to light" @click="toggleDark" variant="link" color="primary"
-        size="xl" :icon="color.preference === 'dark' ? 'i-heroicons-sun-solid' : 'i-heroicons-moon-solid'" />
+        size="sm" :icon="color.preference === 'dark' ? 'i-heroicons-sun-solid' : 'i-heroicons-moon-solid'" />
 </template>
 
 <script setup>

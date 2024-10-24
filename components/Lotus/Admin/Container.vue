@@ -3,9 +3,9 @@
         <USlideover v-model="isOpenFormToCreate">
             <LotusAdminCreate @done="updateTable" />
         </USlideover>
-        <div class="flex items-center justify-between">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-start md:justify-between gap-4">
             <LotusDashboardHeader title="Administrator" />
-            <UButton icon="i-heroicons-plus" color="primary" variant="solid" size="lg"
+            <UButton icon="i-heroicons-plus" color="primary" variant="solid" size="sm"
                 @click="isOpenFormToCreate = true">
                 Create QR code
             </UButton>

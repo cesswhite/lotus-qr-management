@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="flex px-3 py-3.5 border-b border-primary-300 dark:border-primary-700">
+        <div class="flex pb-4 border-b border-primary-300 dark:border-primary-700">
             <UInput v-model="q" placeholder="Filter by name..." size="lg" color="primary" />
         </div>
         <UTable v-if="filteredRows" :rows="filteredRows" :columns="columns" :loading="loading">
