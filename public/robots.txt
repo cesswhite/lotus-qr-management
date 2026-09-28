@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Workspace routes use noindex headers and meta tags; keep them crawlable.
+Sitemap: https://lotus.ecostudios.dev/sitemap.xml

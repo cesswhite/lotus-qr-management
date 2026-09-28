@@ -20,7 +20,7 @@ export default defineNuxtConfig({
         },
       ],
       htmlAttrs: {
-        lang: "es",
+        lang: "en",
       },
     },
   },
@@ -30,5 +30,9 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     '@vueuse/motion/nuxt'
   ],
+  routeRules: {
+    '/lotus': { headers: { 'X-Robots-Tag': 'noindex, follow' } },
+    '/lotus/**': { headers: { 'X-Robots-Tag': 'noindex, follow' } },
+  },
   compatibilityDate: "2024-08-02",
 })
