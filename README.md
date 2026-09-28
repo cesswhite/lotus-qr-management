@@ -2,9 +2,12 @@
 
 # Lotus | QR Management
 
+[Repository guide](docs/REPOSITORY_GUIDE.md): code map, local storage, scripts and limits.
+[AGENTS.md](AGENTS.md) provides concise instructions for coding assistants.
+
 Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
 
-- [Demo here](https://lotus-local.vercel.app/)
+- [Demo here](https://lotus.ecostudios.dev/)
 
 ## About
 
@@ -35,26 +38,25 @@ Made by [Eco Development Studios](https://www.ecostudios.dev/)
 - **Version:** 0.1
 - **Tech Stack:** Nuxt 3 & TailwindCSS
 - **Category:** SaaS
-- **Page Speed:** 90 / 100 / 100 / 90
+- **Page Speed:** 90 / 100 / 100 / 90 (historical listing; not a current measurement)
 - **Compatibility:** Chrome, Firefox, Safari, Brave, Arc, Edge
 
-## Folder and Component Structrue
+## Folder and Component Structure
 
-The components that are used are inside the `components` folder and each one is used in the `app.vue` file.
+`app.vue` provides the page/layout shell. `pages/index.vue` presents the product;
+`pages/lotus/` composes the dashboard, record manager and settings from `components/Lotus/`.
+`composables/qr.ts` persists records and theme color in browser local storage.
 
-```bash
-# src/components/
- - Component1 (SFC a.k.a .vue file)
- - Component2 (SFC a.k.a .vue file)
-```
+There is no login or database: `/lotus/admin` is the local record manager, not a protected
+administrator role. See the [repository guide](docs/REPOSITORY_GUIDE.md) for storage and QR behavior.
 
 ## Setup
 
-Make sure to install the dependencies:
+Use pnpm with the committed `pnpm-lock.yaml` for installation; no package-manager version
+is pinned in `package.json`. Bun can run scripts without replacing the dependency lock.
 
 ```bash
-# npm
-npm install
+pnpm install --frozen-lockfile
 ```
 
 ## Development Server
@@ -62,8 +64,7 @@ npm install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
+bun run dev
 ```
 
 ## Production
@@ -71,15 +72,13 @@ npm run dev
 Build the application for production:
 
 ```bash
-# npm
-npm run build
+bun run build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
+bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
