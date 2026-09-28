@@ -1,0 +1,11 @@
+# Lotus
+
+> Local QR code management by Eco Development Studios.
+
+Lotus lets users create, customize and manage QR codes locally in a web browser, without a database or a microservice deployment.
+
+## Public pages
+
+- [Lotus](https://lotus.ecostudios.dev/): product overview.
+- [Sitemap](https://lotus.ecostudios.dev/sitemap.xml): public page list.
+- [Eco Development Studios](https://www.ecostudios.dev/): publisher.
